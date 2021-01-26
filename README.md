@@ -42,9 +42,11 @@ gives a lot of information about the data such as missing values, imbalance data
 values and so on. I did some visualizations to explore the dataset.
 
 * Number of defective images(orange) v/s normal images(blue) in the dataset
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img11.png)
 
 * Number of defects in a single image(most of the images are with single defect)
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img12.png)
 
 * Number of images per type of defect
@@ -52,14 +54,17 @@ values and so on. I did some visualizations to explore the dataset.
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img13.png)
 
 * A defective image and its corresponding mask indicating the exact location of the defect
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img15.png)
 
 * Two defective images of defect type 3 & 4 respectively, combined along with their respective masks
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img14.jpg)
 
-### Phase 2: Using transfer learning to deploy Microsoft’s ResNet model to observe the
-power of CNN for image classification. Here the model will classify which images are
-normal & which are with defects.
+***Problems in Phase 1: No Problems***
+
+### Phase 2: Using transfer learning to deploy Microsoft’s ResNet model to observe the power of CNN for image classification. 
+Here the model will classify which images are normal & which are with defects.
 
 * **ResNet:** This is the model proposed by Microsoft which got 96.4% accuracy in the ImageNet
 2016 competition. ResNet is used as a pre-trained model for several applications. 
@@ -71,5 +76,42 @@ normal & which are with defects.
 
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img15.jpg)
 
+***Problems in Phase 2: No Problems***
 
+### Phase 3: is about image segmentation using the ResUNet model. localized the defects in a defective image.
+After the classification has been done the first task was achieved. In this phase the focus is on task 2 which is ‘image segmentation’. The defect in the defective images will
+belocalized. For this task the model used is ResUNet.
+* For classical CNNs: they are generally used when the entire image is needed to be classified as a class label.
+* For Unet: pixel level classification is performed. U-net formulates a loss function for every pixel in the input image. Softmax function is applied to every pixel which makes the segmentation problem work as a classification problem where classification is performed on every pixel of the image.
+* The ResUNet model has been trained on **40 epochs** for this project.
+
+***Problems in Phase 3: No Problems***
+
+### Phase 4: describes how good the model’s predictions are.
+In this phase the model built and trained is put to test on images which it has
+never seen before. The test images are random images from the dataset. The task of the
+trained model is to classify these images as defective or normal and then take all the
+defective images and mark the defect using its predicted mask.
+***The prediction of the model can be seen below. On the left side are the real images(green)
+and on the right side are the images predicted(red) using the trained model.***
+
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/image%20(2).png)
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/image%20(3).png)
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/image%20(6).png)
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/image%20(7).png)
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/image%20(8).png)
+
+***Problems in Phase 4: In most of the cases the trained model is performing really good to localize the defect. But
+there are few errors as seen in the 4th prediction. The type of error predicted by the model is
+3 but in reality its type 1. This can be due to the imbalance dataset which included defect type
+3 images the most***
+
+## Conclusions
+In this project a pipeline has been created for the entire project which can take in the input and classify the image as normal
+or defected and later the defected images are put as an input to the segmentation model
+which predicts the location of the defect.
+The overall results can be concluded in 3 points:
+* **The model works pretty good to classify the images as normal or defective.**
+* **The model is well accurate to detect the mask of defective image which locates the defects accurately.**
+* **The model is producing some inappropriate results in case of detecting the type of defect. As there are 4 types of defects in the dataset. The model is more biased to predict type 3 defects. This can be due to the imbalance dataset as images with type 3 defects are the most in number. With a well balanced dataset this issue can be solved. This can be achieved via image augmentation which can be a future scope for this project.**
 
