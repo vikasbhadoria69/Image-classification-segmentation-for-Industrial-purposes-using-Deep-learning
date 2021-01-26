@@ -68,6 +68,7 @@ normal & which are with defects.
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/imgcon.png)
 
 * The classification report gave really good results for precision and recall.
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img15.jpg)
 
 
