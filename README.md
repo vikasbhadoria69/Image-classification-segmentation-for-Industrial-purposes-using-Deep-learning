@@ -41,19 +41,20 @@ the dataset and visualize it. This is a crucial step in any project related to d
 gives a lot of information about the data such as missing values, imbalance data, unique
 values and so on. I did some visualizations to explore the dataset.
 
-1. Number of defective images(orange) v/s normal images(blue) in the dataset
+* Number of defective images(orange) v/s normal images(blue) in the dataset
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img11.png)
 
-2. Number of defects in a single image(most of the images are with single defect)
+* Number of defects in a single image(most of the images are with single defect)
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img12.png)
 
-3. Number of images per type of defect
+* Number of images per type of defect
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img13.png)
 
-4. A defective image and its corresponding mask indicating the exact location of the defect
+* A defective image and its corresponding mask indicating the exact location of the defect
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img15.png)
 
-5. Two defective images of defect type 3 & 4 respectively, combined along with their respective masks
+* Two defective images of defect type 3 & 4 respectively, combined along with their respective masks
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img14.jpg)
 
 
