@@ -64,6 +64,7 @@ normal & which are with defects.
 * ResNet: This is the model proposed by Microsoft which got 96.4% accuracy in the ImageNet
 2016 competition. ResNet is used as a pre-trained model for several applications. 
 * After training the model for 40 epochs an accuracy of 87% on the test images was achieved. Below is the confusion matrix of the result after testing the model on new images.
+
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/imgcon.png)
 
 * The classification report gave really good results for precision and recall.
