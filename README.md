@@ -6,7 +6,7 @@
 
 ## Code and Resources Used
 **Python Version:** 3.7  
-**Packages:** pandas, numpy, TensorFlow, matplotlib, TransferLearning, Keras. 
+**Packages:** pandas, numpy, OpenCV, Seaborn, TensorFlow, matplotlib, TransferLearning, Keras. 
 
 ## Keywords
 Deep learning, Convolutional Neural Networks, Transfer Learning, ResNet,
@@ -115,3 +115,4 @@ The overall results can be concluded in 3 points:
 * **The model is well accurate to detect the mask of defective image which locates the defects accurately.**
 * **The model is producing some inappropriate results in case of detecting the type of defect. As there are 4 types of defects in the dataset. The model is more biased to predict type 3 defects. This can be due to the imbalance dataset as images with type 3 defects are the most in number. With a well balanced dataset this issue can be solved. This can be achieved via image augmentation which can be a future scope for this project.**
 
+***Read more about data science for business here on my [webpage](https://datascience-for-business-vikas.herokuapp.com/)***
