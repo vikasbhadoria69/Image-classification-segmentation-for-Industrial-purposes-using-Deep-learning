@@ -57,5 +57,17 @@ values and so on. I did some visualizations to explore the dataset.
 * Two defective images of defect type 3 & 4 respectively, combined along with their respective masks
 ![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img14.jpg)
 
+### Phase 2: Using transfer learning to deploy Microsoft’s ResNet model to observe the
+power of CNN for image classification. Here the model will classify which images are
+normal & which are with defects.
+
+* ResNet: This is the model proposed by Microsoft which got 96.4% accuracy in the ImageNet
+2016 competition. ResNet is used as a pre-trained model for several applications. 
+* After training the model for 40 epochs an accuracy of 87% on the test images was achieved. Below is the confusion matrix of the result after testing the model on new images.
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/imgcon.png)
+
+* The classification report gave really good results for precision and recall.
+![alt text](https://github.com/vikasbhadoria69/Image-classification-segmentation-for-Industrial-purposes-using-Deep-learning/blob/main/Images/img15.jpg)
+
 
 
